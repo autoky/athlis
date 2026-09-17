@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Athlis — Tas Kulit Premium Buatan Tangan</title>
+<meta name="description" content="Athlis. Tas kulit premium buatan tangan. Setiap jahitan bercerita.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#top" class="logo">ATHLIS</a>
+
+    <nav class="nav-desktop">
+      <a href="#koleksi">Koleksi</a>
+      <a href="#proses">Proses</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Keranjang belanja">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6h2l1.5 12h11L20 8H7"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg>
+        <span class="label">Keranjang</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NAV MOBILE ============ -->
+<nav class="nav-mobile" id="navMobile">
+  <a href="#koleksi">Koleksi</a>
+  <a href="#proses">Proses</a>
+  <a href="#tentang">Tentang</a>
+  <a href="#testimoni">Testimoni</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow">Atelier Kulit Sejak 2016</p>
+        <h1 class="hero-title">Setiap jahitan,<br><em>bercerita.</em></h1>
+        <p class="hero-desc">Athlis merancang tas kulit premium yang dijahit tangan oleh pengrajin berpengalaman — dibuat untuk mereka yang menghargai detail, ketahanan, dan kesederhanaan yang berkelas.</p>
+        <div class="hero-actions">
+          <a href="#koleksi" class="btn btn-primary">Jelajahi Koleksi</a>
+          <a href="#tentang" class="btn btn-ghost">Kisah Kami</a>
+        </div>
+        <svg class="hero-stitch stitch" viewBox="0 0 340 14" preserveAspectRatio="none">
+          <path d="M2 7 L338 7"/>
+        </svg>
+      </div>
+
+      <div class="hero-art">
+        <div class="ring" aria-hidden="true"></div>
+        <!-- Line-art tote illustration -->
+        <svg viewBox="0 0 400 400" fill="none" stroke="var(--gold)" stroke-width="1.4">
+          <path d="M120 150 Q120 80 200 80 Q280 80 280 150" stroke-linecap="round"/>
+          <rect x="90" y="150" width="220" height="210" rx="10"/>
+          <path d="M90 210 H310" stroke-dasharray="5 6" opacity=".6"/>
+          <path d="M130 150 V360" stroke-dasharray="4 5" opacity=".35"/>
+          <path d="M270 150 V360" stroke-dasharray="4 5" opacity=".35"/>
+          <circle cx="200" cy="255" r="18" opacity=".5"/>
+          <path d="M200 240 V270 M185 255 H215" opacity=".5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>KULIT FULL-GRAIN PILIHAN</span>
+      <span>DIJAHIT TANGAN</span>
+      <span>GARANSI 5 TAHUN</span>
+      <span>PENGIRIMAN SELURUH INDONESIA</span>
+      <span>KULIT FULL-GRAIN PILIHAN</span>
+      <span>DIJAHIT TANGAN</span>
+      <span>GARANSI 5 TAHUN</span>
+      <span>PENGIRIMAN SELURUH INDONESIA</span>
+    </div>
+  </div>
+
+  <!-- ============ KOLEKSI ============ -->
+  <section class="section" id="koleksi">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Koleksi</p>
+          <h2 class="section-title">Dibuat untuk <span class="italic-gold">dipakai bertahun-tahun</span></h2>
+        </div>
+        <p class="section-sub">Enam siluet inti, masing-masing dinamai dari lanskap Nusantara yang menjadi inspirasinya.</p>
+      </div>
+
+      <svg class="stitch stitch-divider reveal" viewBox="0 0 1180 14" preserveAspectRatio="none"><path d="M2 7 H1178"/></svg>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Cards injected by script.js -->
+      </div>
+
+      <div class="grid-footer reveal">
+        <a href="#kontak" class="btn btn-ghost">Lihat Semua Koleksi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROSES ============ -->
+  <section class="section process" id="proses">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Proses</p>
+          <h2 class="section-title">Dari kulit mentah <span class="italic-gold">menjadi warisan</span></h2>
+        </div>
+        <p class="section-sub">Empat tahapan yang dijalani setiap tas Athlis sebelum sampai ke tangan Anda.</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding:0;">
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <p class="process-num">01</p>
+          <h3>Pemilihan Kulit</h3>
+          <p>Hanya kulit sapi full-grain dengan serat terbaik yang lolos seleksi tangan pengrajin kami.</p>
+        </div>
+        <div class="process-step reveal">
+          <p class="process-num">02</p>
+          <h3>Pemotongan Pola</h3>
+          <p>Pola dipotong presisi mengikuti arah serat kulit agar kekuatan dan bentuk tas terjaga.</p>
+        </div>
+        <div class="process-step reveal">
+          <p class="process-num">03</p>
+          <h3>Penjahitan Tangan</h3>
+          <p>Dijahit satu per satu menggunakan teknik saddle stitch ganda agar jahitan tak mudah lepas.</p>
+        </div>
+        <div class="process-step reveal">
+          <p class="process-num">04</p>
+          <h3>Kontrol Kualitas</h3>
+          <p>Setiap tas diperiksa lebih dari dua puluh titik sebelum diberi label Athlis dan dikirim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENTANG ============ -->
+  <section class="section about" id="tentang">
+    <div class="container">
+      <div class="about-mark reveal">
+        <svg viewBox="0 0 300 300" fill="none" stroke="var(--gold)" stroke-width="1.3">
+          <path d="M70 230 L150 60 L230 230" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M95 175 H205" stroke-dasharray="5 6"/>
+          <circle cx="150" cy="150" r="110" opacity=".3"/>
+          <circle cx="150" cy="150" r="130" opacity=".12"/>
+        </svg>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">Tentang Athlis</p>
+        <h2 class="section-title">Kesederhanaan yang <span class="italic-gold">dijahit dengan sabar</span></h2>
+        <p>Athlis lahir dari ruang kerja kecil di Bandung, tempat sekelompok pengrajin kulit percaya bahwa tas yang baik tidak perlu berteriak — cukup bertahan lama dan bertambah indah seiring waktu.</p>
+        <p>Kami memilih untuk tidak mengejar tren musiman. Setiap koleksi dirancang untuk tetap relevan lima, sepuluh, bahkan dua puluh tahun dari sekarang — sama seperti kulit yang justru semakin berkarakter saat menua.</p>
+
+        <div class="quote">
+          <p>“Kami tidak membuat tas untuk musim ini saja — kami membuat tas yang akan diwariskan.”</p>
+          <cite>— Tim Pengrajin Athlis</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONI ============ -->
+  <section class="section" id="testimoni" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Testimoni</p>
+          <h2 class="section-title">Kata mereka yang <span class="italic-gold">sudah memakainya</span></h2>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>Sudah dua tahun dipakai hampir tiap hari, kulitnya makin bagus warnanya. Jahitannya masih rapi sekali.</p>
+          <p class="testi-name">Dinda Pratiwi</p>
+          <p class="testi-role">Sagara Tote</p>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>Ransel ini kuat banget buat kerja tiap hari, tapi tetap kelihatan rapi dipakai ke acara formal.</p>
+          <p class="testi-name">Bayu Saputra</p>
+          <p class="testi-role">Giri Backpack</p>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>Detail finishingnya terasa sekali beda dengan tas kulit lain yang pernah saya beli. Worth it.</p>
+          <p class="testi-name">Larasati Wibowo</p>
+          <p class="testi-role">Kanaya Clutch</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section newsletter">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center;">Athlis Circle</p>
+      <h2>Jadi yang pertama tahu koleksi baru kami</h2>
+      <p>Dapatkan akses awal ke koleksi terbatas dan cerita di balik proses pembuatannya.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Alamat email Anda" required>
+        <button type="submit" class="btn btn-primary">Daftar</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="kontak">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">ATHLIS</a>
+        <p>Tas kulit premium buatan tangan dari Bandung, dirancang untuk perjalanan panjang — bukan sekadar musim ini.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.9 19.7z"/><path d="M9 9.5c.3 2.5 2.7 4.9 5.2 5.2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Belanja</h4>
+        <ul>
+          <li><a href="#koleksi">Semua Koleksi</a></li>
+          <li><a href="#koleksi">Tas Baru</a></li>
+          <li><a href="#koleksi">Best Seller</a></li>
+          <li><a href="#koleksi">Sedang Diskon</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="#">Panduan Ukuran</a></li>
+          <li><a href="#">Pengiriman</a></li>
+          <li><a href="#">Pengembalian</a></li>
+          <li><a href="#">Perawatan Kulit</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="mailto:halo@athlis.id">halo@athlis.id</a></li>
+          <li><a href="tel:+622212345678">(022) 1234 5678</a></li>
+          <li><a href="#">Jl. Braga No. 21, Bandung</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Athlis. Seluruh hak cipta dilindungi.</span>
+      <span>Dibuat dengan bangga di Bandung, Indonesia.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
