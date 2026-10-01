@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antigravity Bags - Brand tas modern untuk mobilitas harian, kerja, dan traveling. Material waterproof premium, ergonomis, dan tahan lama.">
+  <title>Athlis Bags — Modern Carry Goods & Everyday Packs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎒</text></svg>">
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">🎒</div>
+        <span>ATHLIS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#katalog">Katalog Produk</a></li>
+        <li><a href="#keunggulan">Material & Fitur</a></li>
+        <li><a href="#testimoni">Ulasan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-cart" id="btnOpenCart" aria-label="Buka Keranjang Belanja" title="Keranjang Belanja">
+          🛒
+          <span class="cart-badge" id="cartBadge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-tag">✨ Koleksi Baru 2026</span>
+          <h1 class="hero-title">
+            Bawa Lebih Ringan,<br>
+            Melangkah <span>Tanpa Beban</span>.
+          </h1>
+          <p class="hero-desc">
+            Tas ransel, sling bag, dan perlengkapan harian berdesain futuristik dengan material <em>water-repellent</em> serta distribusi bobot ergonomis. Didesain untuk komuter cerdas dan traveler aktif.
+          </p>
+          <div class="hero-buttons">
+            <a href="#katalog" class="btn btn-primary">Jelajahi Produk</a>
+            <a href="#keunggulan" class="btn btn-secondary">Pelajari Fitur</a>
+          </div>
+        </div>
+        <div class="hero-image-card">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=80" alt="Koleksi Tas Antigravity" width="600" height="420">
+          <div class="hero-floating-badge">
+            <div class="floating-badge-title">Aero Urban Backpack 22L</div>
+            <div class="floating-badge-sub">Waterproof Cordura 1000D • Slot Laptop 15.6"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features-section" id="keunggulan">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon-box">💧</div>
+            <div>
+              <div class="feature-title">Water-Repellent</div>
+              <div class="feature-desc">Material kedap air menjaga barang bawaan tetap aman saat hujan.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-box">🛡️</div>
+            <div>
+              <div class="feature-title">Ergonomic Fit</div>
+              <div class="feature-desc">Bantalan busa bernapas yang meratakan beban di punggung & bahu.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-box">⚡</div>
+            <div>
+              <div class="feature-title">YKK Hardware</div>
+              <div class="feature-desc">Ritsleting dan buckle original standar militer tahan aus.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon-box">✨</div>
+            <div>
+              <div class="feature-title">Garansi Seumur Hidup</div>
+              <div class="feature-desc">Jaminan reparasi gratis untuk kerusakan jahitan dan ritsleting.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="catalog-section" id="katalog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Koleksi Terbaik</span>
+          <h2 class="section-title">Pilihan Tas Untuk Aktivitasmu</h2>
+          <p class="section-sub">Temukan ukuran dan fungsi tas yang paling sesuai dengan kebutuhan mobilitas harianmu.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Semua Produk</button>
+          <button class="filter-btn" data-filter="backpack">Backpack / Ransel</button>
+          <button class="filter-btn" data-filter="sling">Sling & Waist Pack</button>
+          <button class="filter-btn" data-filter="tote">Tote Bag</button>
+          <button class="filter-btn" data-filter="travel">Travel / Duffle</button>
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div class="products-grid" id="productsContainer">
+          <!-- Diisi otomatis oleh js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story / Material Highlight -->
+    <section class="story-section">
+      <div class="container story-grid">
+        <div class="story-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Material Tas Cordura Tahan Air" loading="lazy">
+        </div>
+        <div>
+          <span class="section-badge">Standar Produksi</span>
+          <h2 class="section-title" style="text-align: left; font-size: 2rem;">Bahan Berkualitas Tanpa Kompromi</h2>
+          <p style="color: var(--text-muted); margin-bottom: 20px;">
+            Setiap jilid tas Athlis melalui proses riset distribusi berat dan pengujian gesekan. Kami menggabungkan estetika minimalis perkotaan dengan ketahanan material outdoor tangguh.
+          </p>
+          <div class="specs-list">
+            <div class="spec-point">
+              <div class="spec-bullet">✓</div>
+              <div>
+                <strong>Cordura 1000D & Ripstop:</strong> Tahan sobekan tajam, tidak mudah tergores, dan mudah dibersihkan.
+              </div>
+            </div>
+            <div class="spec-point">
+              <div class="spec-bullet">✓</div>
+              <div>
+                <strong>Suspended Laptop Pocket:</strong> Kompartemen gantung yang melindungi laptop dari benturan saat tas diletakkan ke lantai.
+              </div>
+            </div>
+            <div class="spec-point">
+              <div class="spec-bullet">✓</div>
+              <div>
+                <strong>Magnetic Fasteners:</strong> Memudahkan buka-tutup saku depan secara instan dalam satu gerakan tangan.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="catalog-section" id="testimoni" style="background: #f1f5f9; padding: 70px 0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Ulasan Pembeli</span>
+          <h2 class="section-title">Apa Kata Mereka?</h2>
+          <p class="section-sub">Lebih dari 3.500+ pengguna aktif mengandalkan Athlis Bags setiap harinya.</p>
+        </div>
+        <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+          <div style="background: #fff; padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+            <div style="color: var(--warning); margin-bottom: 10px;">★★★★★</div>
+            <p style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 16px;">
+              "Aero Urban Backpack-nya luar biasa nyaman. Dipakai motoran waktu hujan deras isi tas laptop dan dokumen tetap aman kering total!"
+            </p>
+            <div style="font-weight: 700; font-size: 0.9rem;">Rifki Pratama</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Software Engineer, Jakarta</div>
+          </div>
+          <div style="background: #fff; padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+            <div style="color: var(--warning); margin-bottom: 10px;">★★★★★</div>
+            <p style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 16px;">
+              "Sling Bag Pro desainnya keren banget, minimalis tapi muat iPad mini, dompet, powerbank, dan kunci motor. Jahitan rapi sekali."
+            </p>
+            <div style="font-weight: 700; font-size: 0.9rem;">Rauf Nugraha</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Content Creator, Bandung</div>
+          </div>
+          <div style="background: #fff; padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+            <div style="color: var(--warning); margin-bottom: 10px;">★★★★★</div>
+            <p style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 16px;">
+              "Checkout langsung via WhatsApp admin-nya sangat cepat dan responsif. Pengiriman kilat dan packing box-nya premium."
+            </p>
+            <div style="font-weight: 700; font-size: 0.9rem;">Sarah Nabilah</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Creative Director, Surabaya</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Dialog Modal (<dialog>) -->
+  <dialog id="cartDialog" aria-labelledby="cartDialogTitle">
+    <div class="dialog-header">
+      <h3 class="dialog-title" id="cartDialogTitle">Keranjang Belanja</h3>
+      <button class="btn-close-dialog" id="btnCloseCart" aria-label="Tutup Keranjang">&times;</button>
+    </div>
+    <div class="dialog-body">
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered items -->
+      </div>
+      <div class="cart-empty" id="cartEmptyState">
+        <p style="font-size: 2.5rem; margin-bottom: 10px;">🛒</p>
+        <p style="font-weight: 600; margin-bottom: 6px;">Keranjang belanja Anda masih kosong</p>
+        <p style="font-size: 0.85rem;">Pilih produk tas favoritmu di katalog sekarang.</p>
+      </div>
+    </div>
+    <div class="dialog-footer">
+      <div class="cart-summary-row">
+        <span>Total Belanja:</span>
+        <span id="cartSubtotal">Rp 0</span>
+      </div>
+      <button class="btn-whatsapp-checkout" id="btnCheckoutWA">
+        <span>💬</span> Pesan Sekarang via WhatsApp
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Product Detail Modal (<dialog>) -->
+  <dialog id="productDetailDialog" aria-labelledby="detailDialogTitle">
+    <div class="dialog-header">
+      <h3 class="dialog-title" id="detailDialogTitle">Detail Spesifikasi Tas</h3>
+      <button class="btn-close-dialog" id="btnCloseDetail" aria-label="Tutup Modal">&times;</button>
+    </div>
+    <div class="dialog-body" id="detailModalBody">
+      <!-- Injected by JavaScript -->
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🎒 ATHLIS BAGS</h3>
+          <p>
+            Merek tas lokal inovatif yang memadukan durabilitas standar militer dengan siluet modern ergonomis untuk kenyamanan maksimal sepanjang hari.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Koleksi Produk</h4>
+          <ul>
+            <li><a href="#katalog">Backpack / Ransel</a></li>
+            <li><a href="#katalog">Sling & Waist Pack</a></li>
+            <li><a href="#katalog">Tote Bag Harian</a></li>
+            <li><a href="#katalog">Travel & Duffle 35L</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Bantuan & Informasi</h4>
+          <ul>
+            <li><a href="#keunggulan">Garansi Seumur Hidup</a></li>
+            <li><a href="#keunggulan">Perawatan Bahan Cordura</a></li>
+            <li><a href="#hero">Kebijakan Pengembalian</a></li>
+            <li><a href="#hero">Lacak Pesanan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <ul>
+            <li>📍 Workshop: Jl. Sadang Blok Ransel</li>
+            <li>💬 WhatsApp: +62 812-3456-7890</li>
+            <li>📸 Instagram: @athlis.bags</li>
+            <li>✉️ Email: hello@athlisbags.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ATHLIS Bags. Hak Cipta Dilindungi. Dikembangkan bersama Google Antigravity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
